@@ -13,5 +13,3 @@ def getAll():
 def postOne():
     body = request.json
     return (Indicador.crear(body))
-
-app.run(port=5000, debug=True)
