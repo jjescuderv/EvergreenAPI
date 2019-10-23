@@ -13,3 +13,5 @@ def getAll():
 def postOne():
     body = request.json
     return (Indicador.crear(body))
+
+app.debug = True
