@@ -1,9 +1,9 @@
 from flask import Flask, request
-#from flask_cors import CORS
+from flask_cors import CORS
 from controllers.Indicadores import Indicador
 
 app = Flask(__name__)
-#CORS(app)
+CORS(app)
 
 @app.route('/indicadores', methods=['GET'])
 def getAll():
@@ -13,6 +13,3 @@ def getAll():
 def postOne():
     body = request.json
     return (Indicador.crear(body))
-
-app.debug = True
-app.run()
