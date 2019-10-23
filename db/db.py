@@ -1,5 +1,5 @@
 #import mysql.connector as mysql
-conn = mysql.MySQLConnection(
+conn = mysql.connector.MySQLConnection(
     host="evergreen.mysql.database.azure.com",
     port=3306,
     user="evergreenadmin@evergreen",
