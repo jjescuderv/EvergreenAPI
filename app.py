@@ -15,3 +15,4 @@ def postOne():
     return (Indicador.crear(body))
 
 app.debug = True
+app.run()
